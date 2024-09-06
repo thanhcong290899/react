@@ -1,0 +1,63 @@
+.search-button {
+    width: auto;
+    /* Điều chỉnh lại chiều rộng của nút */
+    flex: 0 0 50px;
+    /* Đặt kích thước cố định cho nút tìm kiếm */
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.line {
+    border-bottom: 1px solid darkgray;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: mistyrose;
+}
+
+.search-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-right {
+    border-right: 1px solid darkgray;
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header-left {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+h4 {
+    border-bottom: 1px solid darkgray;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: darkgrey;
+}
+
+.boder-line {
+    border-right: 1px solid darkgray;
+    height: 850px;
+    background-color: mistyrose;
+}
+
+.dropdown-menu-custom {
+    right: 0;
+    left: auto;
+}
