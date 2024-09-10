@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './cpn.css';
-const Sidebar = () => {
+
+const Sidebar = ({ onSearch }) => {
+    const [searchTerm, setSearchTerm] = useState("");
+
+    const handleSearch = () => {
+        onSearch(searchTerm);
+    };
+
     return (
         <>
             <div className="row line justify-content-center align-items-center">
@@ -14,10 +21,16 @@ const Sidebar = () => {
                             name="search"
                             id="search"
                             placeholder="Search"
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
                             className="form-control"
                         />
                         <div className="input-group-prepend">
-                            <button type="submit" className="form-control search-button">
+                            <button
+                                type="button"
+                                className="form-control search-button"
+                                onClick={handleSearch}
+                            >
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </div>

@@ -61,6 +61,7 @@ const ContentForm = () => {
                                         placeholder="Enter the title"
                                         value={title} // Liên kết với state
                                         onChange={(e) => setTitle(e.target.value)}
+                                        required
                                     />
                                 </div>
                                 <div className="form-group">
@@ -71,6 +72,7 @@ const ContentForm = () => {
                                         rows="3"
                                         value={brief}
                                         onChange={(e) => setBrief(e.target.value)}
+                                        required
                                     ></textarea>
                                 </div>
                                 <button type="submit" className="btn btn-success">

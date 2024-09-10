@@ -37,6 +37,7 @@ function Login() {
                             //Hàm setEmail("test@example.com") được gọi và cập nhật giá trị của email thành "test@example.com".
                             onChange={(e) => setEmail(e.target.value)}
                             className="input"
+                            required
                         />
                     </div>
                     <div className="inputGroup">
@@ -46,6 +47,7 @@ function Login() {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="input"
+                            required
                         />
                     </div>
                     <div className="checkboxContainer">

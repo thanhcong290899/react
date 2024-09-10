@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './cpn.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link } from 'react-router-dom';
-
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 const Header = () => {
     return (
         <>

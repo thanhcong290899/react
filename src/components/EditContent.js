@@ -56,6 +56,7 @@ const UpdateContent = () => {
                                         id="title"
                                         value={content.title}
                                         onChange={(e) => setContent({ ...content, title: e.target.value })}
+                                        required
                                     />
                                 </div>
                                 <div className="form-group">
@@ -66,6 +67,7 @@ const UpdateContent = () => {
                                         rows="3"
                                         value={content.brief}
                                         onChange={(e) => setContent({ ...content, brief: e.target.value })}
+                                        required
                                     ></textarea>
                                 </div>
                                 <button type="submit" className="btn btn-success">Update</button>
