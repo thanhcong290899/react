@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './cpn.css';
-import Sidebar from './Nav'; // Sửa tên import cho đúng
+import Sidebar from './Nav';
 import Header from './Header';
 
 const ViewContent = () => {
@@ -23,7 +23,7 @@ const ViewContent = () => {
                     setLoading(false);
                 })
                 .catch(error => {
-                    console.error('Error loading content:', error);
+
                     setLoading(false);
                 });
         }, 5000);
