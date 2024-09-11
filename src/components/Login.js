@@ -31,10 +31,6 @@ function Login() {
                             type="email"
                             placeholder="Email"
                             value={email}
-                            //xử lý sự kiện khi người dùng nhập giá trị vào ô input 
-                            //Sự kiện onChange sẽ được kích hoạt mỗi khi có thay đổi (khi người dùng gõ mỗi ký tự).
-                            //Giá trị hiện tại của ô input (e.target.value) sẽ là "test@example.com".
-                            //Hàm setEmail("test@example.com") được gọi và cập nhật giá trị của email thành "test@example.com".
                             onChange={(e) => setEmail(e.target.value)}
                             className="input"
                             required

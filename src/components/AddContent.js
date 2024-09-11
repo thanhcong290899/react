@@ -24,7 +24,7 @@ const ContentForm = () => {
             title: title,
             brief: brief
         };
-        console.log(newContent);
+
 
         //...contentList: Spread operator lấy tất cả các phần tử hiện có của mảng contentList và trải chúng ra.
         //[...contentList, newContent]: Tạo một mảng mới bao gồm tất cả các phần tử của contentList, sau đó thêm phần tử newContent vào cuối mảng mới.
